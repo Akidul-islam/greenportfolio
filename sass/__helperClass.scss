@@ -1,0 +1,34 @@
+.flex{
+    display: flex;
+}
+.flex-jc-sb{
+    justify-content: space-between;
+}
+
+.flex-jc-c{
+    justify-content: center;
+}
+
+.flex-ai-c{
+    align-items: center;
+}
+
+// 
+.grid{
+    display: grid;
+}
+.grid__jc__c{
+    justify-content: center;
+}
+
+// .mobo__toggle__btn{
+//     @include breakpoints-down(small){
+//         display: block;
+//     }
+// }
+
+// .desktop__toggle__btn{
+//     @include breakpoints-up(medium){
+//         display: none;
+//     }
+// }

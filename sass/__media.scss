@@ -1,0 +1,471 @@
+// // 640px, 1024px,1400px
+// $breakpoints-up:("small":"40em", "medium":"64em", "large":"87.5em" );
+// // 639px, 1023px, 1399px
+// $breakpoints-down:("small":"39.9397em", "medium":"63.9375em", "large":"86.4735em");
+
+// width639px
+
+
+@media screen and (max-width:63.9375em) {
+    .home{
+       
+      .hero{
+          justify-content: center;
+      }
+   }
+  
+    
+}
+
+@media  screen and (max-width:39.9397em) {
+    $logoFont:2em;
+    $headTitle:2.5em;
+  .home{
+      display: block;
+        overflow-x: hidden;
+        height: auto;
+        &::before{
+            display: none;      
+         }
+        .nav__header{
+            height: 5em;
+        }
+         .navber__container{
+               padding: 0 1em;
+                justify-content: unset !important;
+                align-items: unset !important;
+                flex-direction: column;
+        }
+         
+
+        .link__container{margin-top: 1.5em;
+            justify-content: unset !important;
+            align-items: unset !important;
+            flex-direction: column;
+            height: 0;
+            overflow: hidden;
+            transition:height 0.5s linear;
+            // box-shadow:0 1px 5px rgba(0,0,0,0.3);
+            &.show__link{
+                // animation: link 2s linear forwards;
+                height: 200px;
+                // overflow: unset;
+            }
+        }
+    
+    
+        .logo{
+            font-size: $logoFont !important;
+            
+        }
+    
+        .scroll__link{
+            display: block;
+            &:not(:first-child){
+                 margin-top: 0.5em;
+            }
+        }
+    
+        .btn_hire_me{
+            margin-top: 0.8em;
+            width: 100%;
+            padding: 0.4em 0 !important;
+            box-shadow: 0 -0.1em 10em -1px $greenColor !important;
+          }
+     
+       .hero{
+            padding: 6em 2em 2em 2em;
+            flex-wrap: wrap;
+            gap:3em;
+       }
+       
+       .social__link{
+           top: 20% !important;
+           right: 1em;
+           left: unset !important;
+       }
+    
+       .hero__content{
+           order: 2;
+    
+           h1{
+             font-size: $headTitle;
+        }
+       }
+      
+      .hero__img{
+       img{
+           max-width: 23.5em;
+           border: none;
+       }
+    
+      }
+    
+     }
+
+    .about{
+        .about__wrapper{
+            flex-direction: column;
+            padding: 0 2em;
+            align-items: center;
+            gap: 2em 0;
+        }
+
+        .about__img{
+            flex: unset;
+        }
+        .my__img{
+            max-width: 25em;
+        }
+        .about__text_content{
+            padding:0 2em ;
+        }
+    } 
+
+    .portfolio{
+
+      .features__center{
+        grid-template-columns: repeat(1,minmax(18em,18.74em)) !important;
+        justify-content: center;
+      }
+
+
+    }
+
+.skills{
+   
+    .skills__header__title{
+        padding: 0 1em;
+    }
+
+   .skills__container{
+    grid-template-columns: repeat(1,minmax(18em,20em)) !important;
+    justify-content: center;
+   } 
+
+
+    
+}
+
+.project{
+    .project__wrapper{
+        justify-content: center;
+    }
+        .project__btn__container{
+            display: unset !important;
+        }
+    
+        .project__container{
+            grid-template-columns: repeat(1,minmax(300px,320px)) !important;
+            // justify-content: center;
+        }
+}
+
+.contack{
+    
+    .form__center{
+        display: flex;
+    }
+    .form__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #text__area{
+        max-width: 30em;
+    }
+}
+
+}
+
+@media screen and (min-width:40em) {
+    $logoFont:2.5em;
+    .home{
+        min-height:100vh;
+        padding: 1.5em 1em;
+        overflow-x: hidden;
+        height: unset;
+        &::before{
+            display: none;
+        }
+   
+    .nav__header {
+        height: 5em;
+    }
+    .navber__container{
+        padding: 0 1em;
+        justify-content: unset;
+        align-items: unset !important;
+        flex-direction: column;
+}
+
+.link__container{
+    margin-top: 2em;
+    justify-content: unset !important;
+    align-items: unset !important;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s linear;
+    &.show__link{
+        // animation: link 2s linear forwards;
+        height: 200px;
+        // overflow: unset;
+    }
+}
+
+
+.logo{
+    font-size: $logoFont !important;
+    
+}
+
+.scroll__link{
+    display: block;
+    &:not(:first-child){
+         margin-top: 0.5em;
+    }
+}
+
+.hero{
+    padding:5em 0 0 2em;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 3em;
+}
+
+.hero__content{
+    order: 2;
+}
+
+.social__link{
+    left: unset !important;
+    right: 1em;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+.btn_hire_me{
+    margin-top: 0.85em;
+    // width: 100%;
+    padding: 0.4em 0 !important;
+    box-shadow: 0 0.1em 10em -1px $greenColor !important;
+  }
+}
+
+.about{
+
+    .about__wrapper{
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .about__text_content{
+        
+        padding: 0 3em;
+    }
+}
+
+
+.portfolio{
+
+    .features__center{
+      grid-template-columns: repeat(2,minmax(18em,18.74em)) !important;
+      justify-content: center;
+      grid-gap: 2.5em !important;
+    }
+
+
+  }
+
+  .skills{
+   
+    .skills__header__title{
+        padding: 0 1em;
+    }
+
+   .skills__container{
+       padding: 0 1em;
+    grid-template-columns: repeat(2,minmax(18em,20em)) !important;
+    justify-content: center;
+   } 
+
+
+    
+}
+
+.project{
+        .project__btn__container{
+            display: unset;
+        }
+    
+        .project__container{
+            padding: 1em;
+            grid-template-columns: repeat(2,minmax(300px,320px)) !important;
+            justify-content: center;
+            grid-gap: 3em;
+        }
+}
+
+.contack{
+    .form__center{
+        display: flex;
+    }
+    .form__container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #text__area{
+        max-width: 40em;
+    }
+
+    .btn__submit{
+        width: 12em;
+        height: 50px;
+    }
+}
+
+}
+
+
+@media screen  and (min-width:64em) {
+.toggle__btn{
+    display: none;
+}
+
+  .home{
+    padding: 1em 0 0 !important;
+    min-height: 100vh;
+      &::before{
+          display: unset;
+      }  
+
+  .navber__container{
+    padding:0 !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: unset;
+}
+
+.link__container{
+    margin-top: 0 !important;
+    flex-direction: unset;
+justify-content:space-between !important;
+align-items: center !important;
+flex: content;
+height: auto !important;
+overflow: unset;
+}
+
+
+
+.btn_hire_me{
+    margin-top: 0;
+    width: auto;
+    padding: 0.55em 2em !important;
+    box-shadow: 1em 1em 3em $greenColor !important;
+  }
+
+
+.scroll__link{
+    display:unset;
+    &:not(:first-child){
+         margin-top: 0.5em;
+    }
+}
+
+.social__link{
+    position: absolute;
+    left: 1em !important;
+    right: unset;
+    top: 35%;
+}
+
+.hero{
+    
+    padding:9em 0 0;
+    flex-wrap: unset;
+    justify-content:space-between;
+    gap: unset;
+}
+
+.hero__content{
+  order: unset !important;
+}
+
+}  
+
+.about{
+     
+    .about__wrapper{
+        flex-direction: unset;
+        justify-content: space-between;
+    }
+    .about__text_content{
+        
+        padding:0;
+    }
+}
+
+.portfolio{
+
+    .features__center{
+        grid-template-columns:repeat(3,minmax(18em,18.75em)) !important;
+        grid-gap: 4em !important;
+      justify-content: unset;
+    }
+
+
+  }
+
+  .skills{
+   
+    .skills__header__title{
+        padding: 0;
+    }
+
+   .skills__container{
+       padding: 0;
+    grid-template-columns: repeat(3,minmax(18em,20em)) !important;
+    justify-content: unset;
+   } 
+
+
+    
+}
+
+.project{
+        .project__btn__container{
+            display: flex;
+        }
+    
+        .project__container{
+            padding: 0;
+            grid-template-columns: repeat(3,minmax(300px,320px)) !important;
+           justify-content: unset;
+            grid-gap: 3em;
+        }
+}
+
+.contack{
+    .form__center{
+        display: flex;
+    }
+    .form__container{
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+
+    #text__area{
+        max-width: 65em;
+    }
+
+    .btn__submit{
+        width: 12em;
+        height: auto;
+    }
+}
+
+}
+
+

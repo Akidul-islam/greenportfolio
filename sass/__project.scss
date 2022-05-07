@@ -1,0 +1,106 @@
+.project{
+    margin-top: 3em;
+.project__wrapper{
+  display: grid;
+  grid-gap: 2em;
+  justify-content: center;
+.project__title{
+  text-align: center;
+h3{
+ @include welcome-text;
+}
+
+h2{
+  margin-top: 1em;
+}
+
+}
+
+.project__btn__container{
+   margin-top: 1em;
+   display: flex;
+   gap: 0 1.5em;
+   justify-content: center;
+}
+
+.filter__btn{
+    cursor: pointer;
+    color: $darkGray;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    font-size: $smFont;
+    font-weight: $regFont;
+    padding: 0.33em 0.56em 0.7em;
+    background: transparent;
+    transition: border 0.5s ease-in;
+    &.active{
+      border-color: $greenColor;
+    }
+    &:hover{
+        border-color:$greenColor;
+    }
+}
+
+.project__container{
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3,minmax(300px,320px));
+
+.project__item{
+  cursor: pointer;
+  animation: fade 0.5s ease-in;
+  overflow: hidden;
+   &:nth-child(5) .project__content{
+       transform: translateY(0);
+   }
+}   
+
+.img__wrapper{
+   position: relative;
+   &:hover .project__content{
+       transform: translateY(0) scale(1);
+   }
+   
+.project__content{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+  //  text-align: center;
+   background-color: $greenColor;
+   padding: 30% 0.8em;
+   line-height: 1.6em;    
+   transform: translateY(-100%) scale(0.4);
+   transition: 0.5s ease-in;
+
+   h4{
+       font-size: $linksFont;
+   }
+   p{
+       font-size:$smFont;
+   }
+
+   .know__more{
+    color: $darkGray;
+    margin-top: 2em;
+    padding: 0.6em 1em;
+    background: $whiteColor;
+    font-size: $smFont;
+    span{
+      margin-left: 0.6em;
+        width: 1.3em;
+    }
+   }
+
+}
+}
+}
+
+.view{
+  color: $whiteColor;
+  background: $greenColor !important;
+}
+
+}
+}

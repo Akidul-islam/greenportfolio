@@ -1,0 +1,15 @@
+protflio greenCO
+
+note font family:playfair display;
+links font:montserat;
+$logoFont:3em;poppins
+$headTitle:3.75em;
+$linksFont:1.125em;
+$wcFont:1.25;
+$btnFont:1.562;
+$smFont:1em;
+$secTitleFont:2.5em; 
+$whiteColor:#FFFFFF;
+$greenColor:#0FBF61;
+$darkGray:#151D41;
+

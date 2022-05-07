@@ -1,0 +1,152 @@
+.home{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        padding: 1em 0 0;
+        position: relative;
+        z-index: 1;
+         &::before{
+            content: ''; 
+            position: absolute;
+            width: 30em;
+            height: 70em;
+            background: $greenColor;
+            top: -22.375em;
+            right: -10.34em;
+            transform: rotate(35deg);
+            border-radius: 44.937em;
+            z-index: -1;
+            transform: rotate(60deg);
+             
+         }
+         
+        .nav__header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1em 0;
+            z-index: 100;
+            transition: 0.5s ease-in;
+            &.fixed__navber{
+                background: $whiteColor;
+                box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            }
+            .logo{
+                color: $darkGray;
+               font-size: $logoFont;
+               font-weight: $blodFont;
+              span {
+                  margin-left: 0.11em;
+                  border-radius: 0.11em;
+                  padding: 0.11em;
+                  color: $whiteColor;
+                   background-color: $greenColor;
+               }
+            }
+
+
+            .links{
+                font-size: $linksFont;
+                font-weight: $regFont;
+                .scroll__link{
+                     margin-left:1.875em;
+                     color:$darkGray;
+                     font-size: $smFont;
+                 }
+            }
+    
+            .btn_hire_me{
+                box-shadow: 1em 0.5em 20em -0.5em $greenColor;
+                &.shadow{
+                    box-shadow: 0 0 20em rgba(0,0,0,0.4);
+                  
+              }
+            }
+    
+        }
+    
+
+    .hero{
+        .social__link{
+            position: absolute;
+            left: 1em;
+            top: 35%;
+            .s__link{
+               display: block;
+               margin-top: 1em;
+           }
+           .twitter{
+                position: relative;
+                z-index: 1;
+                width: 20px;
+                height: 20px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: $greenColor;
+                    top: 0;
+                    left: 0;
+                    z-index: 3;
+
+            } 
+           }
+        }
+          
+         .hero__content{
+                h3{
+                   @include welcome-text;
+                }
+                h1{
+                    opacity: 0;
+                    color: $darkGray;
+                    margin: 0.5em 0 0.2em;
+                    animation: fade 0.5s ease-in forwards;
+                    animation-delay: 0.8s;
+                }
+                h6{
+                    opacity: 0;
+                    letter-spacing: 0.1em;
+                    padding: 0 0 1em;
+                    font-size:$wcFont;
+                    font-weight: $semiBlodFont;
+                    animation: fade 0.6s ease-in forwards;
+                    animation-delay: 1.5s;
+                }
+                p{ opacity: 0;
+                    max-width:35em;
+                    line-height: $lineHeight;
+                    animation: fade 0.5s ease-in forwards;
+                    animation-delay: 1.9s;
+                }
+
+                .btn__container{
+                    opacity: 0;
+                    margin-top: 2em;
+                    animation: fade 0.7s ease-in forwards;
+                    animation-delay: 2.1s;
+                    .btn__premery{
+                      color: $whiteColor;
+                       background: $greenColor;
+                    }
+                    .btn__secondry{
+                      color: $darkGray;
+                      border: 0.12em solid $darkGray;
+                      margin-left: 0.5em;
+                    }
+                }
+
+         }
+
+         .hero__img{
+             img{
+                    max-width: 24em;
+                    border:5px solid white;
+                    border-radius: 50%;
+                }
+         }
+    }
+
+} 

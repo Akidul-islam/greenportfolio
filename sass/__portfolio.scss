@@ -1,0 +1,82 @@
+.portfolio{
+ 
+ .features{
+
+      .features__title{
+          text-align: center;
+          h3{
+              @include welcome-text;
+          }
+
+          h2{
+              margin-top: 1em;
+          }
+      }
+
+      .features__box{
+            margin-top: 4em;          
+            
+            .features__container{
+                position: relative;
+                // z-index: 1;  
+
+          }
+
+          .features__center{
+              display: grid;
+              grid-template-columns:repeat(3,minmax(18em,18.75em));
+              grid-gap: 4em;
+              background-color: $whiteColor;
+          }
+
+          .features__item{
+              padding: 2em 0.88em 1em;
+              box-shadow: $boxShadow;
+              border-radius: $borderRadius;
+              height: 21.5em;
+              line-height: 2em;
+
+            .icon__img{
+                color: white;
+            }
+
+            h4{
+                font-size: $serviceFont;
+                padding: 0.33em 0;
+            }
+            
+            .btn__services{
+                color: $whiteColor;
+                margin-top: 2em;
+                padding: 0.3em 1em;
+                background: $greenColor;
+                font-size: $smFont;
+                span{
+                    width: 1.5em;
+                    margin-left: 1em;
+                }
+            }
+
+          }
+
+          .features__img{
+            position: absolute;
+            bottom: -5em;
+            right: -5em;
+            z-index: -1;
+            img{
+                height: 20em;
+            }
+          }
+
+      }
+ }    
+
+
+
+
+
+
+
+
+}

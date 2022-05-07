@@ -1,0 +1,10 @@
+@mixin welcome-text{
+    opacity: 0;
+    display: inline;
+    color: $greenColor;
+    padding: 0.8em 2em;
+    background: $welColor;
+    border-radius: 0.15em;
+    animation: fade 0.6s ease-in forwards;
+}
+

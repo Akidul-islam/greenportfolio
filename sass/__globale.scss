@@ -1,0 +1,127 @@
+// color
+$logoFont:3em;
+$headTitle:3.75em;
+$linksFont:1.125em;
+$wcFont:1.25em;
+$btnFont:1.362em;
+$smFont:1em;
+$secTitleFont:2.5em;
+$serviceFont:1.6em;
+$blodFont:bold; 
+$regFont:400; 
+$semiBlodFont:500; 
+$whiteColor:#FFFFFF;
+$greenColor:#0FBF61;
+$welColor:#0a80003b;
+$darkGray:#151D41;
+$bgColor:#FFFFFF;
+$borderRadius:0.13em;
+$boxShadow:0 20px 11px 0 rgba(0,0,0,0.15);
+$lineHeight:1.3em;
+
+
+*,::before,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    // font-family: playfairdisplay;
+    font-family: sans-serif;
+    background: $bgColor;
+}
+
+h1{
+    font-size:$headTitle;
+    font-weight: $blodFont;
+}
+h3{
+    font-size: $wcFont;
+    font-weight: $semiBlodFont;
+}
+
+
+h2,h4,h5{
+ color: $darkGray;
+ font-size: $secTitleFont;
+ font-weight: $blodFont;
+}
+p{  
+    font-size: $smFont;
+    font-weight: $regFont;
+}
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+// center
+.container{
+    width: 100%;
+    max-width: 64em;
+    margin: auto;
+}
+
+.btn{
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    font-size: $btnFont;
+    font-weight: $regFont;
+    padding: 0.55em 2em;
+    color: $greenColor;
+    background: white;
+    border-radius: 0.22em;
+}
+.__pt__pb{
+    padding-top: 7em;
+    padding-bottom: 2em;
+}
+
+.toggle__btn{
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: 0;
+    // padding: 0.65em;
+    img{
+        width: 2.5em;
+    }
+    .close__toggle{
+        display: none;
+        width: 3em;
+    }
+    &.active{
+        animation: fade 0.5s ease-in;
+        .menu__toggle{
+            display: none;}
+            .close__toggle{
+                display: block;
+            }
+    }
+
+}
+
+.box__shadow{
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+// animition text__shadow add
+.animit__text{
+     animation: fade 0.5s ease-in forwards;
+}

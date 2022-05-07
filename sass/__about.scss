@@ -1,0 +1,90 @@
+.about{
+    // min-height: 100vh;
+    overflow-x: hidden;
+    .about__wrapper{
+            gap: 0 6em;
+        .about__img{
+          // opacity: 0;
+          flex: 1;
+          position: relative;
+          // animation: fade 0.7s ease-in forwards;
+            .my__img{
+              height: 30em;
+            }
+            
+            .dash__border{
+                position: absolute;
+                z-index: -1;
+                right: -11em;
+                transform: translate(-50%,-50%);
+                top: 45%;
+            }
+        }
+        
+        .about__text_content{
+           flex: 1;
+           margin-top: 1.5em;
+         .about__text{
+            //  width: 35em;
+             margin-top: 4em;
+             .about__title{
+              @include welcome-text;
+                
+           }
+           
+           h2{  
+               opacity: 0;
+                margin-top: 0.54em;
+                // animation: fade 0.8s ease-in forwards;
+                animation-delay: 0.8s;
+           }
+           p{
+             opacity: 0;
+            //  animation: fade 0.7s ease-in forwards;
+             animation-delay: 1.5s;
+             margin-top: 0.88em;
+             line-height: $lineHeight;
+           }
+
+           .download__cv{
+             opacity: 0;
+            //  animation: fade 0.7s ease-in forwards;
+             animation-delay: 2.1s;
+               margin-top: 1em;
+               color: $whiteColor;
+               background: $greenColor;
+           }
+
+         }  
+
+
+
+        }
+         
+
+    }
+
+    .about__progress_bar{
+     .circle__item{
+         position: relative;
+         z-index: 2;
+         &::before{
+           content: '';
+           position: absolute;
+           z-index: 1;
+         }
+     }
+
+    //  .percent{
+
+    //  }
+
+    //  .amount{
+
+    //  }
+
+
+
+   }
+
+}
